@@ -1,0 +1,9 @@
+C:\Projects\Nouveau dossier\MainProgram\Converter\bin\Debug\Converter.dll
+C:\Projects\Nouveau dossier\MainProgram\Converter\bin\Debug\Converter.pdb
+C:\Projects\Nouveau dossier\MainProgram\Converter\obj\Debug\Converter.csprojAssemblyReference.cache
+C:\Projects\Nouveau dossier\MainProgram\Converter\obj\Debug\Converter.csproj.CoreCompileInputs.cache
+C:\Projects\Nouveau dossier\MainProgram\Converter\obj\Debug\Converter.dll
+C:\Projects\Nouveau dossier\MainProgram\Converter\obj\Debug\Converter.pdb
+C:\Projects\Nouveau dossier\MainProgram\Converter\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Projects\Nouveau dossier\MainProgram\Converter\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Projects\Nouveau dossier\MainProgram\Converter\obj\Debug\Converter.csproj.CopyComplete
