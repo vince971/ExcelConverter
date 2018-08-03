@@ -22,7 +22,7 @@ namespace Converter
             var workBook = app.Workbooks.Open(excelFilePath);
 
             // Adding new extension
-            var xlsxFile = excelFilePath + "x";
+            var xlsxFile = Path.Combine(Path.GetDirectoryName(excelFilePath), System.IO.Path.GetFileNameWithoutExtension(excelFilePath) + ".xlsx");
 
             // Saving new file with xlsx format
             workBook.SaveAs(Filename: xlsxFile, FileFormat: Microsoft.Office.Interop.Excel.XlFileFormat.xlOpenXMLWorkbook);
