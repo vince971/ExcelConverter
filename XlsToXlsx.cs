@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 
 namespace Converter
 {
@@ -17,17 +17,22 @@ namespace Converter
             if (!File.Exists(excelFilePath))
                 throw new FileNotFoundException(excelFilePath);
 
+            // Starting Excel app
             var app = new Microsoft.Office.Interop.Excel.Application();
 
+            // Opening the XLS File
             var workBook = app.Workbooks.Open(excelFilePath);
 
             // Adding new extension
-            var xlsxFile = Path.Combine(Path.GetDirectoryName(excelFilePath), System.IO.Path.GetFileNameWithoutExtension(excelFilePath) + ".xlsx");
+            var outPutFile = Path.Combine(Path.GetDirectoryName(excelFilePath), System.IO.Path.GetFileNameWithoutExtension(excelFilePath) + ".xlsx");
+            
+            // Saving new file on XLSX Format
+            workBook.SaveAs(Filename: outPutFile, FileFormat: Microsoft.Office.Interop.Excel.XlFileFormat.xlOpenXMLWorkbook);
 
-            // Saving new file with xlsx format
-            workBook.SaveAs(Filename: xlsxFile, FileFormat: Microsoft.Office.Interop.Excel.XlFileFormat.xlOpenXMLWorkbook);
-
+            // Closing XLS File
             workBook.Close();
+
+            // Exiting the Excel App
             app.Quit();
         }
     }
